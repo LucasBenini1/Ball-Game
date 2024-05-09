@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Projeto Fura Bola</title>
+</head>
+<body>
+
+    <!--Botoes-->
+    <button id="stopGameBtn" onclick="stop()">STOP</button>
+    <button id="restartBtn" onclick="reiniciar()">Reiniciar</button>
+    <button id="topR" onclick="BtnShowRecord()">Recorde</button>
+
+    <!--Estatisticas-->
+    
+    <div id="stats"></div>
+
+
+        <!--Inicial-->
+    <div id="config">
+        <div id="textConfig">Digite a dificuldade</div>
+        <input type="number" min="0.5" max="4" id="velo" placeholder="0.5 a 4">
+        <button id="botao" onclick="comecarJogo()">Iniciar Jogo</button>
+    </div>
+
+
+        <!--Recorde-->
+    <div id="placar">
+        <h3>Seu novo recorde!</h3>
+        <p id="showRecord"></p>
+    </div>
+
+    <div id="div-BtnShowRecord">
+        <h5 id="div-show-record"></h5>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
